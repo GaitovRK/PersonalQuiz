@@ -96,7 +96,7 @@ extension QuestionsViewController {
         questionProgressView.setProgress(totalProgress, animated: true)
         
         // set navigation title
-        title = "Вопрос № \(questionIndex + 1) из \(questions.count)"
+        title = "Question № \(questionIndex + 1) out of \(questions.count)"
         
         // show stacks corresponding to response type
         showCurrentAnswers(for: currentQuestion.type)

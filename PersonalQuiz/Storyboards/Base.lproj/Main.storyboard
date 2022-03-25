@@ -18,18 +18,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="o6z-8y-Lx3">
-                                <rect key="frame" x="21" y="240" width="278.5" height="88"/>
+                                <rect key="frame" x="15" y="240" width="290" height="88"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Какое вы животное?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4P-Xa-bzi">
-                                        <rect key="frame" x="0.0" y="0.0" width="278.5" height="36"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which animal are you?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4P-Xa-bzi">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fsi-Mf-hwN">
-                                        <rect key="frame" x="0.0" y="52" width="278.5" height="36"/>
+                                        <rect key="frame" x="0.0" y="52" width="290" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Начать опрос"/>
+                                        <state key="normal" title="Begin"/>
                                         <connections>
                                             <segue destination="XH6-Gk-g43" kind="presentation" modalPresentationStyle="fullScreen" id="A3R-Ff-Shv"/>
                                         </connections>
@@ -185,7 +185,7 @@
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfh-DY-qul">
                                         <rect key="frame" x="0.0" y="188" width="280" height="30"/>
-                                        <state key="normal" title="Ответить"/>
+                                        <state key="normal" title="Answer"/>
                                         <connections>
                                             <action selector="multipleAnswerPressed" destination="mdP-ee-s0o" eventType="touchUpInside" id="Lax-Qt-Rhu"/>
                                         </connections>
@@ -220,7 +220,7 @@
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V54-Vi-5Kg">
                                         <rect key="frame" x="0.0" y="120.5" width="280" height="30"/>
-                                        <state key="normal" title="Ответить"/>
+                                        <state key="normal" title="Answer"/>
                                         <connections>
                                             <action selector="rangedAnswerButtonPressed" destination="mdP-ee-s0o" eventType="touchUpInside" id="nd7-lL-ndc"/>
                                         </connections>
@@ -286,7 +286,7 @@
             </objects>
             <point key="canvasLocation" x="1597.5" y="136.26760563380282"/>
         </scene>
-        <!--Результаты-->
+        <!--Results-->
         <scene sceneID="TWw-oy-fHN">
             <objects>
                 <viewController id="o2f-gN-PXg" customClass="ResultsViewController" customModule="PersonalQuiz" customModuleProvider="target" sceneMemberID="viewController">
@@ -295,16 +295,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="62H-Bl-Dyz">
-                                <rect key="frame" x="20" y="187.5" width="280" height="193.5"/>
+                                <rect key="frame" x="20" y="237.5" width="280" height="93.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы - 🐶" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZq-bG-6SK">
-                                        <rect key="frame" x="60" y="0.0" width="160.5" height="60"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are - 🐶" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZq-bG-6SK">
+                                        <rect key="frame" x="13.5" y="0.0" width="253.5" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вам нравится быть с друзьями. Вы окружаете себя людьми, которые вам нравятся и всегда готовы помочь." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4p5-2a-f1n">
-                                        <rect key="frame" x="8.5" y="68" width="263" height="125.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You enjoy ..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4p5-2a-f1n">
+                                        <rect key="frame" x="85.5" y="68" width="109" height="25.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -320,7 +320,7 @@
                             <constraint firstItem="62H-Bl-Dyz" firstAttribute="leading" secondItem="Bqs-nf-IJZ" secondAttribute="leading" constant="20" id="a7u-LR-HNS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Результаты" id="Exf-mL-iGB">
+                    <navigationItem key="navigationItem" title="Results" id="Exf-mL-iGB">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="8Uu-Vx-paC">
                             <connections>
                                 <segue destination="BS0-Jl-wjW" kind="unwind" unwindAction="unwindWithSegue:" id="H7s-nc-cJs"/>
